@@ -1,104 +1,167 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Verdana;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
 }
-.navigasi{
-    background-color:  #374997;
-    width: 100%;
-    height: 70px;
-    color: aliceblue;
-    position: fixed;
+.navigasi {
+  background-color: #374997;
+  width: 100%;
+  height: 70px;
+  color: aliceblue;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
 }
-.logo{
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 30px
+.logo {
+  /* float: left; */
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
 }
-.menu{
-    margin-left: 900px;
-    padding-top: 27px;
+.menu {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
 }
-.menu ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 50px;
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.menu ul li a{
-    text-decoration:none;
-    color:aliceblue;
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
 }
-.menu ul li a:hover{
-    color: lightskyblue;
-    font-style: italic;
+.menu ul li a {
+  text-decoration: none;
+  color: aliceblue;
 }
-.banner{
-    background-color: #3b5997;
-    height:600px;
-    text-align: center;
-    color: aliceblue;
+.menu ul li a:hover {
+  color: lightskyblue;
+  font-style: italic;
 }
-.banner img{
-    border-radius: 800px;
-    height: 150px;
-    border: 5px solid white;
-    margin-top: 100px;
+.banner {
+  background-color: #3b5997;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  color: aliceblue;
 }
-.banner h1{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.banner img {
+  border-radius: 800px;
+  height: 150px;
+  border: 5px solid white;
+  margin-top: 100px;
 }
-.banner button{
-    margin-top: 60px;
-    padding:10px;
-    width: 400px;
-    border-radius: 50px;
-    border:none
-
+.banner h1 {
+  margin: 20px;
 }
-.banner button:hover{
-    background-color: #3b5997;
-    border: 1px solid white;
-    color:white;
-
+.banner button {
+  margin-top: 60px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 50px;
+  border: none;
+}
+.banner button:hover {
+  background-color: #3b5997;
+  border: 1px solid white;
+  color: white;
 }
 h1 span:before {
-    content:'';
-    animation: gerak infinite 8s ease;
-    transform: translateY(-50%);
-    color:lightblue;
-    font-size: 50px;
-
+  content: "";
+  animation: gerak infinite 8s ease;
+  transform: translateY(-50%);
+  color: lightblue;
+  font-size: 2rem;
 }
 
-@keyframes gerak{
-    0% {
-        content:'Selamat Datang';
-    }
-    50% {
-        content:'Saya Gilang Yudhananta';
-    }
-    100% {
-        content:'Terimakasih Sudah Singgah';
-    }
+@keyframes gerak {
+  0% {
+    content: "Selamat Datang";
+  }
+  50% {
+    content: "Saya Gilang Yudhananta";
+  }
+  100% {
+    content: "Terimakasih Sudah Singgah";
+  }
 }
-.box-pendidikan{
-    text-align: center;
-    color: #4d4d4d;
-    margin-top: 10px;
-    align-content: center;
+.box-pendidikan {
+  display: flexbox;
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 90px;
+  align-content: center;
 }
-.pendidikanimg{
-    border-radius: 900px;
-    height: 150px;
+.pendidikanimg {
+  border-radius: 900px;
+  height: 150px;
+}
+.box-kiri,
+.box-tengah,
+.box-kanan {
+  width: 300px;
+  height: 320px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 30px 7px;
+  padding-right: 10px;
+  padding: 50px 50px;
+  margin: 70px 20px 20px 55px;
+  border-radius: 15px;
+  float: left;
+}
+.box-kiri:hover,
+.box-tengah:hover,
+.box-kanan:hover {
+  background-color: #3b5997;
+  color: white;
+}
+.box-pendidikan h3,
+p {
+  margin-top: 10px;
+  margin-bottom: 13px;
+  padding-top: 0px 20px;
+}
+.box-softskill {
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 560px;
+  align-content: center;
+}
+.box-kontak img {
+  display: flex;
+  width: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.box-kontak {
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 500px;
+}
 
-}
-.pendidikan a button{
-    margin-top: 60px;
-    padding:10px;
-    width: 400px;
-    border-radius: 50px;
-    border:none
+@media only screen and (max-width: 756px) {
+  .banner img {
+    width: 50%;
+  }
 
+  .banner button {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* tampilan pada ukuran layar < 768px */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* tampilan pada ukuran layar < 480px */
+  body {
+    font-size: 14px;
+  }
 }
