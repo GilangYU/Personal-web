@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "Roboto", sans-serif;
+  /* border: 1px solid red; */
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigation ul li {
+  margin-right: 20px;
+}
+
+.navigation ul a {
+  color: black;
+  text-decoration: none;
+}
+
+.container-banner {
+  color: white;
+  padding: 100px;
+  margin: 100px;
+  background-image: url("./image/backround-img.png");
+  object-position: center;
+}
+
+.container-banner p,
+.container-banner h1 {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.container-banner p {
+  text-align: justify;
+}
+
+.container-banner-btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #a8071a;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+main article {
+  display: flex;
+}
+
+main article section {
+  padding: 50px;
+}
+
+main article section img {
+  width: 500px;
+}
+
+main article section h3,
+main article section p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trash-card img {
+  height: auto;
+  width: 300px;
+}
+
+.trash-card h3 {
+  text-align: center;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #a8071a;
+
+  margin: auto;
+}
+
+.article-card img {
+  max-height: 190px;
+  /* object-fit: contain; */
+  /* object-position: center; */
+  /* max-width: 400px; */
+  width: 100%;
+}
+
+.article-card h5 {
+  width: 90%;
+}
+
+.news-card img {
+  object-fit: cover;
+  max-height: 190px;
+  /* width: 100%; */
+  max-width: 300px;
+}
+
+.news-card h5 {
+  width: 80%;
+}
+
+.contact-us h3,
+.contact-us p {
+  text-align: center;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group:nth-child(1) {
+  margin-right: 10px;
+}
+
+.form-container {
+  display: flex;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+footer {
+  background-color: #dfdfdf;
+  height: 50px;
+}
+
+footer p {
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+.btn-kirim {
+  position: absolute;
+  right: 45px;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #a8071a;
+
+  margin: auto;
+}

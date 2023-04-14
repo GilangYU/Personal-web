@@ -4,117 +4,203 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My websiteku</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    <title>EcoWaste</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-  <!---Navigasi-->
-    <div class="navigasi">
-      <div class="logo">
-        <h2>LOGOTEL</h2>
-      </div>
-      <div class="menu">
+    <header>
+      <!-- Start of Navigation -->
+      <nav class="navigation">
+        <img src="./assets/image/logo 1.png" alt="Ecowaste Logo" />
         <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Pendidikan">Pendidikan</a></li>
-          <li><a href="#Softskill">Softskill</a></li>
-          <li><a href="#Kontak">Kontak</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Pilah Sampah</a></li>
+          <li><a href="#">Artikel</a></li>
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Kontak Kami</a></li>
         </ul>
+      </nav>
+      <!-- End of Navigation -->
+
+      <!-- Start of Banner -->
+      <div class="container-banner">
+        <h1>Mari peduli lingkungan sekitarmu</h1>
+        <p>
+          Yuk mulai langkah nyata peduli lingkungan dengan cara membuang sampah
+          pada tempatnya dan jangan lupa untuk memilah sampah sesuai dengan
+          jenisnya ya.
+        </p>
+        <button class="container-banner-btn">Get Started</button>
       </div>
-    </div>
-  <!---Banner-->
-    <div class="banner "id="Home">
-      <img src="assets/boyo.png">
-      <h1>Hallo...<span></span></h1>
-      <p>Kuliah apa Kerja?</p>
-      <a href=""><button>Selengkapnya</button></a>
-    </div>
-  <!---Pendidikan-->
-    <div class="box-pendidikan" id="Pendidikan">
-      <h1>Riwayat Pendidikan</h1>
-      <div class="box-kiri">
-        <img src="assets/IconSD.png" alt="gambar" width="50%" height="50%">
-        <p><h3>Sekolah Dasar</h3></p>
-        <p>Saya bersekolah di SDN Nglanduk 02 Kec Wungu Kab Madiun </p>
-        <a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/605ccaf1-8b18-e111-b421-550a8e4934b5"><button>Selengkapnya</button></a>
+      <!-- End of Banner -->
+    </header>
 
-      </div>
-      <div class="box-tengah">
-        <img src="assets/IconSMP.png" alt="gambar" width="50%" height="50%">
-        <p><h3>Sekolah Menengah Pertama</h3></p>
-        <p>Saya bersekolah di SMPN 13 Madiun</p>
-        <a href="https://web.smpn13madiun.sch.id/"><button>Selengkapnya</button></a>
+    <main>
+      <!-- Start of Tentang Kami -->
+      <h1 class="main-title">Tentang Kami</h1>
+      <article>
+        <section>
+          <img src="./assets/image/environment.svg" alt="Environtment/bro" />
+        </section>
+        <section>
+          <h3>
+            Selamat datang di website kami yang berfokus pada lingkungan dan
+            pengelolaan sampah!
+          </h3>
+          <p>
+            Kami ingin mengajak Anda untuk peduli terhadap lingkungan dan
+            mengambil bagian dalam menjaga kebersihan dan kelestarian bumi kita.
+            Kami menyadari bahwa masalah sampah ini merupakan masalah global
+            yang sangat kompleks.
+          </p>
+          <p>
+            Di sini, Anda akan menemukan berbagai artikel dan tips tentang cara
+            mengurangi sampah, memilah sampah, dan mengelola limbah. Kami juga
+            akan menyajikan berita terbaru tentang isu-isu lingkungan terkini
+            dari berbagai sumber terpercaya.
+          </p>
 
-      </div>
-      <div class="box-kanan">
-        <img src="assets/IconSMA.png" alt="gambar" width="50%" height="50%" >
-        <p><h3>Sekolah Menengah Akhir</h3></p>
-        <p>Saya bersekolah di SMAN 5 Madiun </p>
-        <a href="https://web.sman5madiun.sch.id/"><button>Selengkapnya</button></a>
+          <p>
+            Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan
+            atau ingin berbagi ide mengenai bagaimana kita semua dapat
+            bersama-sama menjaga kelestarian lingkungan. Terima kasih telah
+            mengunjungi website kami!
+          </p>
+        </section>
+      </article>
+      <!-- End of Tentang Kami -->
 
-      </div>
+      <!-- Start of Pilah Sampah -->
+      <h1 class="main-title">Pilah Sampah</h1>
+      <article>
+        <section class="card">
+          <div class="trash-card">
+            <img src="./assets/image/organik.png" alt="organik" />
+            <h3>Organik</h3>
+          </div>
 
-    </div>
+          <div class="trash-card">
+            <img src="./assets/image/anorganik.png" alt="anorganik" />
+            <h3>Anorganik</h3>
+          </div>
 
+          <div class="trash-card">
+            <img src="./assets/image/b3.png" alt="B3" />
+            <h3>B3</h3>
+          </div>
+        </section>
+      </article>
+      <button class="btn">Pelajari Selengkapnya</button>
+      <!-- End of Pilah Sampah -->
 
-    <!---Softskill-->
-    <div class="box-softskill" id="Softskill">
-      <h1>Softskill</h1>
-      <div class="box-kiri">
-        <img src="assets/Icon HTML.png" alt="gambar" width="50%" height="50%">
-        <p><h3>HTML</h3></p>
-        <p></p>
+      <!-- Start of Artikel -->
+      <h1 class="main-title">Artikel</h1>
+      <article>
+        <section class="card">
+          <div class="article-card">
+            <img src="./assets/image/article-1.png" alt="Article 1" />
+            <h5>Predikat Sungai Tercemar di Dunia, Bagaimana Solusinya?</h5>
+          </div>
 
+          <div class="article-card">
+            <img src="./assets/image/article-2.png" alt="article 2" />
+            <h5>Membuang Sampah di Sungai Bikin Sungai Jadi Tercemar Berat</h5>
+          </div>
 
-      </div>
-      <div class="box-tengah">
-        <img src="assets/icon CSS.png" alt="gambar" width="50%" height="50%">
-        <p><h3>CSS</h3></p>
-        <p></p>
-       
+          <div class="article-card">
+            <img src="./assets/image/article-3.png" alt="Article 3" />
+            <h5>Kurangi Sampah Plastik Lautan, Apa Strateginya</h5>
+          </div>
+        </section>
+      </article>
+      <button class="btn">Pelajari Selengkapnya</button>
+      <!-- End of Artikel -->
 
-      </div>
-      <div class="box-kanan">
-        <img src="assets/FIGMA.png" alt="gambar" width="50%" height="50%">
-        <p><h3>FIGMA</h3></p>
-        <p></p>
+      <!-- Start of Berita -->
+      <h1 class="main-title">Berita</h1>
+      <article>
+        <section class="card">
+          <div class="news-card">
+            <img src="./assets/image/berita-1.png" alt="Berita 1" />
+            <h5>
+              Dampak Bakar Sampah di Jabodetabek Nyaris setara Karhutia di
+              Kalimantan
+            </h5>
+          </div>
 
-      </div>
-      <div class="box-kontak" id="Kontak">
-        <h1>Hubungi Kontakku</h1>
-        <img src="assets/WA.png">
-        <h2>085730320106</h2>
-      </div>
-     
+          <div class="news-card">
+            <img src="./assets/image/berita-2.png" alt="Berita 2" />
+            <h5>Badung Akui Tangani Sampah di TPST Belum Optimal</h5>
+          </div>
 
-      <div id="footer_content">
-        
-            <div id="footer_social_media">
-                <a href="#" class="footer-link" id="instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+          <div class="news-card">
+            <img src="./assets/image/berita-3.png" alt="Berita 3" />
+            <h5>
+              Tumpukkan Sampah di Pintu Air Demangan Lama Solo Dibersihkan
+            </h5>
+          </div>
+        </section>
+      </article>
+      <button class="btn">Pelajari Selengkapnya</button>
+      <!-- End of Berita -->
 
-                <a href="#" class="footer-link" id="facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
+      <!-- Start of Kontak Kami -->
+      <h1 class="main-title">Kontak Kami</h1>
+      <article class="contact-us">
+        <section>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.4553399734423!2d111.53941567425453!3d-7.6340815754996285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79be94b7511f73%3A0x863e1316e7a8da28!2sUniversitas%20PGRI%20Madiun!5e0!3m2!1sen!2sid!4v1681389559832!5m2!1sen!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <section>
+          <h3>Get in touch</h3>
+          <p>Silahkan tinggalkan pesan Anda pada kolom yang tersedia.</p>
+          <div class="form">
+            <div class="form-container">
+              <div class="form-group">
+                <label> Nama Depan </label>
+                <input type="text" />
+              </div>
 
-                <a href="#" class="footer-link" id="Linkedin">
-                  <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="#" class="footer-link" id="Gitlab">
-                <i class="fa-brands fa-gitlab"></i>
-            </a>
-            <a href="#" class="footer-link" id="Github">
-              <i class="fa-brands fa-github"></i>
-          </a>
+              <div class="form-group">
+                <label> Nama Belakang </label>
+                <input type="text" />
+              </div>
             </div>
-        </div>
 
-        <div class="copyright">
-          <p>Copyright Gilang Yudhananta2023</p>
-        </div>
-        
-      </div>
+            <div class="form-group">
+              <label> Email </label>
+              <input type="email" />
+            </div>
+
+            <div class="form-group">
+              <label>Pesan</label>
+              <textarea></textarea>
+            </div>
+            <button class="btn-kirim">Kirim</button>
+          </div>
+        </section>
+      </article>
+      <!-- End of Kontak Kami -->
+
+      <!-- Start of Footer -->
+      <footer>
+        <p>&copy; 2023 EcoWaste - FE#5</p>
+      </footer>
+      <!-- End of Footer -->
+    </main>
   </body>
 </html>
